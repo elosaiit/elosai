@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elosaiit.github.io/elosai/spid-2026/sitemap.xml

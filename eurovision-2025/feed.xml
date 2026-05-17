@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eurovision 2025</title>
+    <link>https://elosaiit.github.io/elosai/eurovision-2025</link>
+    <description>Eurovision Song Contest 2025 a Basel: vince l&#39;Austria con JJ e Wasted Love. Italia quinta con Lucio Corsi. Classifica finale completa.</description>
+    <language>it</language>
+    <atom:link href="https://elosaiit.github.io/elosai/eurovision-2025/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    
+    <item>
+      <title>Eurovision 2025: Vincitore, Classifica e Risultati dell&#39;Italia</title>
+      <link>https://elosaiit.github.io/elosai/eurovision-2025/</link>
+      <guid isPermaLink="true">https://elosaiit.github.io/elosai/eurovision-2025/</guid>
+      <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
+      <description>Eurovision Song Contest 2025 a Basel: vince l&#39;Austria con JJ e Wasted Love. Italia quinta con Lucio Corsi. Classifica finale completa.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Elosai — Guide pratiche su tutto quello che cerchi</title>
+    <meta name="description" content="Guide pratiche e informazioni chiare su ISEE, maturità, bonus statali e molto altro. Nate per aiutare e semplificare la ricerca delle persone."/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="https://elosaiit.github.io/elosai/"/>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://elosaiit.github.io/elosai/sitemap.xml"/>
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Elosai — Guide pratiche su tutto quello che cerchi"/>
+    <meta property="og:description" content="Guide pratiche e informazioni chiare su ISEE, maturità, bonus statali e molto altro."/>
+    <meta property="og:url" content="https://elosaiit.github.io/elosai/"/>
+    <meta property="og:site_name" content="Elosai"/>
+    <meta property="og:locale" content="it_IT"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Elosai — Guide pratiche su tutto quello che cerchi"/>
+    <meta name="twitter:description" content="Guide pratiche e informazioni chiare su ISEE, maturità, bonus statali e molto altro."/>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Elosai",
+      "url": "https://elosaiit.github.io/elosai/",
+      "description": "Guide pratiche e informazioni chiare su argomenti che tutti cercano."
+    }
+    </script>
+
+    <script>
+        (function() {
+            var saved = localStorage.getItem('theme');
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+        })();
+    </script>
+    <style>
+        /* Zenith Minimalist — design system inline, zero dipendenze esterne */
+        :root {
+            --bg:              #ffffff;
+            --surface:         #f1edec;
+            --on-surface:      #1c1b1b;
+            --on-surface-muted:#444748;
+            --primary:         #000000;
+            --border:          #e7e7e7;
+            --gap:             16px;
+            --section-sm:      64px;
+            --section-lg:      128px;
+            --pad-mobile:      24px;
+        }
+
+        [data-theme="dark"] {
+            --bg:              #1c1b1b;
+            --surface:         #313030;
+            --on-surface:      #f4f0ef;
+            --on-surface-muted:#c4c7c7;
+            --primary:         #f4f0ef;
+            --border:          #2e2e2e;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--bg);
+            color: var(--on-surface);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--pad-mobile);
+        }
+
+        .content {
+            max-width: 42rem;
+            margin: 0 auto;
+        }
+
+        /* ── Header ── */
+        .site-header { padding-top: var(--gap); }
+        .site-header .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 8px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        .site-header .content h1{
+            margin-top: 20px;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: var(--primary);
+        }
+
+        /* ── Toggle tema ── */
+        .theme-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--on-surface-muted);
+            line-height: 0;
+            padding: 0;
+            transition: opacity 0.2s;
+        }
+        .theme-btn:hover { opacity: 0.6; }
+        .icon-moon { display: block; }
+        .icon-sun  { display: none;  }
+        [data-theme="dark"] .icon-moon { display: none;  }
+        [data-theme="dark"] .icon-sun  { display: block; }
+
+        /* ── Main ── */
+        main {
+            padding-top: var(--section-sm);
+            padding-bottom: var(--section-lg);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: var(--primary);
+            margin-bottom: var(--gap);
+        }
+
+        .intro {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--on-surface-muted);
+            margin-bottom: var(--section-sm);
+            padding-top: var(--gap);
+            border-top: 1px solid var(--border);
+        }
+
+        /* ── Cards ── */
+        .cards { display: flex; flex-direction: column; gap: var(--gap); }
+
+        .card {
+            display: block;
+            padding: 24px;
+            background: var(--surface);
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.15s;
+        }
+        .card:hover { opacity: 0.7; }
+
+        .card-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--on-surface-muted);
+            margin-bottom: 8px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--on-surface-muted);
+        }
+
+        /* ── Footer ── */
+        footer { margin-top: var(--section-lg); }
+        .footer-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--gap);
+            padding: var(--section-sm) 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+        .footer-logo {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--primary);
+        }
+        .copyright { font-size: 16px; color: var(--on-surface-muted); }
+        .disclaimer { font-size: 13px; line-height: 1.5; color: var(--on-surface-muted); max-width: 36rem; }
+
+        /* ── Desktop ── */
+        @media (min-width: 768px) {
+            main { padding-top: var(--section-lg); }
+            h1   { font-size: 50px; letter-spacing: -0.03em; line-height: 1.1; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="wrap">
+        <div class="content">
+            <span class="logo">ELOSAI</span>
+            <button class="theme-btn" onclick="toggleTheme()" aria-label="Cambia tema">
+                <svg class="icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
+                </svg>
+                <svg class="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="wrap">
+    <div class="content">
+        <h1 style="margin-top: 20px;">Quello che tutti cercano.</h1>
+
+        <p class="intro">Queste pagine nascono per aiutare e semplificare la ricerca delle persone. Niente fronzoli, solo informazioni chiare e aggiornate.</p>
+
+        <nav class="cards" aria-label="Sezioni del sito">
+            <a class="card" href="./eurovision-2026/">
+                <div class="card-label">Musica</div>
+                <h2>Eurovision 2026: Vincitore e Classifica Finale</h2>
+                <p>Vince la Bulgaria con Dara e Bangaranga. Italia quinta con Sal Da Vinci. Classifica completa e tutto quello che è successo a Vienna.</p>
+            </a>
+            <a class="card" href="./eurovision-2025/">
+                <div class="card-label">Musica</div>
+                <h2>Eurovision 2025: Vincitore e Classifica Finale</h2>
+                <p>Vince l'Austria con JJ e Wasted Love a Basel. Italia quinta con Lucio Corsi e Volevo essere un duro.</p>
+            </a>
+            <a class="card" href="./isee-2026/">
+                <div class="card-label">Burocrazia</div>
+                <h2>ISEE 2026: Come Fare la DSU Precompilata</h2>
+                <p>La nuova DSU precompilata è obbligatoria dal 1° gennaio 2026. Scadenza 30 giugno per non perdere gli arretrati.</p>
+            </a>
+            <a class="card" href="./maturita-2026/">
+                <div class="card-label">Scuola</div>
+                <h2>Maturità 2026: Date, Materie e Orale</h2>
+                <p>Prima prova il 18 giugno. Quest'anno il colloquio orale ha 4 materie fisse scelte dal Ministero.</p>
+            </a>
+            <a class="card" href="./bonus-nuovi-nati/">
+                <div class="card-label">Famiglia</div>
+                <h2>Bonus Nuovi Nati 2026: 1.000€ INPS</h2>
+                <p>Come richiedere il contributo per ogni figlio nato o adottato nel 2026. Guida alla domanda passo per passo.</p>
+            </a>
+            <a class="card" href="./passaporto-2026/">
+                <div class="card-label">Documenti</div>
+                <h2>Passaporto 2026: Come Richiederlo o Rinnovarlo</h2>
+                <p>Prenotazione online obbligatoria, nuovo costo 42,70€, documenti necessari e tempi medi di attesa.</p>
+            </a>
+            <a class="card" href="./bonus-ristrutturazione-2026/">
+                <div class="card-label">Casa</div>
+                <h2>Bonus Ristrutturazione 2026: Detrazione 50%</h2>
+                <p>Detrazione 50% per la prima casa, 36% per le seconde. Limite 96.000€. Quali lavori sono ammessi.</p>
+            </a>
+            <a class="card" href="./730-precompilato-2026/">
+                <div class="card-label">Fisco</div>
+                <h2>730 Precompilato 2026: Guida Completa</h2>
+                <p>Come accedere, accettare o modificare il 730. Scadenza 30 settembre. Rimborso IRPEF in luglio.</p>
+            </a>
+            <a class="card" href="./congedo-parentale-2026/">
+                <div class="card-label">Famiglia</div>
+                <h2>Congedo Parentale 2026: Indennità e Domanda</h2>
+                <p>Indennità all'80% per i primi 3 mesi. Esteso fino ai 14 anni del figlio. Come fare domanda su INPS.</p>
+            </a>
+            <a class="card" href="./carta-identita-elettronica/">
+                <div class="card-label">Documenti</div>
+                <h2>Carta d'Identità Elettronica: Come Richiederla</h2>
+                <p>Costo 22,21€, vale per viaggiare in Europa, contiene chip per autenticazione online. Guida 2026.</p>
+            </a>
+            <a class="card" href="./spid-2026/">
+                <div class="card-label">Digitale</div>
+                <h2>SPID 2026: Come Attivarlo Gratis</h2>
+                <p>Quale provider scegliere, documenti necessari, attivazione gratuita con Poste Italiane.</p>
+            </a>
+            <a class="card" href="./colf-badanti-2026/">
+                <div class="card-label">Lavoro</div>
+                <h2>Colf e Badanti 2026: Come Assumere in Regola</h2>
+                <p>Comunicazione INPS, contributi, contratto collettivo e detrazioni fiscali per le famiglie.</p>
+            </a>
+            <a class="card" href="./assegno-inclusione-2026/">
+                <div class="card-label">Welfare</div>
+                <h2>Assegno di Inclusione 2026: Guida Completa</h2>
+                <p>Ha sostituito il Reddito di Cittadinanza. Requisiti, importi fino a 780€ e come fare domanda.</p>
+            </a>
+            <a class="card" href="./edilizia-libera-2026/">
+                <div class="card-label">Casa</div>
+                <h2>Edilizia Libera 2026: Cosa Puoi Fare Senza Permessi</h2>
+                <p>Quali lavori non richiedono autorizzazioni, quando serve CILA o SCIA e le sanzioni per gli abusi.</p>
+            </a>
+            <a class="card" href="./patente-guida-2026/">
+                <div class="card-label">Mobilità</div>
+                <h2>Patente di Guida 2026: Rinnovo e Punti</h2>
+                <p>Scadenze per fascia d'età, visita medica, recupero punti e nuovo formato europeo.</p>
+            </a>
+        </nav>
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        <div class="content footer-inner">
+            <div class="footer-logo">ELOSAI</div>
+            <p class="copyright">© 2026 Elosai.</p>
+            <p class="disclaimer"><strong>Privacy:</strong> Questo sito non utilizza cookie e non raccoglie dati personali. Per contare le visite in modo anonimo utilizziamo <a href="https://www.goatcounter.com" target="_blank" rel="noopener noreferrer">GoatCounter</a>, un servizio open source che registra solo dati aggregati (pagine visitate, paese, browser) senza tracciare individui. Le pagine sono ospitate su <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>, che può registrare log di accesso tecnici secondo la propria <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">informativa sulla privacy</a>.</p>
+            <p class="disclaimer">Le informazioni contenute in questo sito hanno scopo esclusivamente divulgativo e sono fornite con il massimo impegno di accuratezza (best-effort). Non sostituiscono il parere di un professionista qualificato. Per qualsiasi decisione importante, rivolgiti sempre a un esperto.</p>
+            <p class="disclaimer">Hai trovato un errore o un'informazione non aggiornata? Segnalacelo a <a href="mailto:elosaiit@proton.me">elosaiit@proton.me</a>.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleTheme() {
+        var html = document.documentElement;
+        var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+    }
+</script>
+
+<script data-goatcounter="https://elosai.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

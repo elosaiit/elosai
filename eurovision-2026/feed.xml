@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eurovision 2026</title>
+    <link>https://elosaiit.github.io/elosai/eurovision-2026</link>
+    <description>Eurovision Song Contest 2026 a Vienna: vincitore, classifica finale, risultati dell&#39;Italia con Sal Da Vinci e tutto quello che è successo.</description>
+    <language>it</language>
+    <atom:link href="https://elosaiit.github.io/elosai/eurovision-2026/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    
+    <item>
+      <title>Eurovision 2026: Vincitore, Classifica e Risultati dell&#39;Italia</title>
+      <link>https://elosaiit.github.io/elosai/eurovision-2026/</link>
+      <guid isPermaLink="true">https://elosaiit.github.io/elosai/eurovision-2026/</guid>
+      <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
+      <description>Eurovision Song Contest 2026 a Vienna: vince la Bulgaria con Dara e Bangaranga. Italia quinta con Sal Da Vinci. Classifica finale completa.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

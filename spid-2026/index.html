@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Primary SEO -->
+    <title>Come attivare SPID nel 2026: guida completa agli identity provider | SPID 2026</title>
+    <meta name="description" content="Tutto su SPID 2026: 9 provider ufficiali, livelli 1/2/3, documenti necessari, attivazione gratuita e differenza con CIE."/>
+    <meta name="author" content="Elosai"/>
+    <meta name="robots" content="index, follow"/>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://elosaiit.github.io/elosai/spid-2026/"/>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Come attivare SPID nel 2026: guida completa agli identity provider"/>
+    <meta property="og:description" content="Tutto su SPID 2026: 9 provider ufficiali, livelli 1/2/3, documenti necessari, attivazione gratuita e differenza con CIE."/>
+    <meta property="og:url" content="https://elosaiit.github.io/elosai/spid-2026/"/>
+    <meta property="og:site_name" content="SPID 2026"/>
+    <meta property="og:locale" content="it_IT"/>
+    
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Come attivare SPID nel 2026: guida completa agli identity provider"/>
+    <meta name="twitter:description" content="Tutto su SPID 2026: 9 provider ufficiali, livelli 1/2/3, documenti necessari, attivazione gratuita e differenza con CIE."/>
+    
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="SPID 2026" href="https://elosaiit.github.io/elosai/spid-2026/feed.xml"/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://elosaiit.github.io/elosai/spid-2026/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://elosaiit.github.io/elosai/spid-2026/apple-touch-icon.png"/>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Come attivare SPID nel 2026: guida completa agli identity provider",
+        "description": "Tutto su SPID 2026: 9 provider ufficiali, livelli 1/2/3, documenti necessari, attivazione gratuita e differenza con CIE.",
+        "author": { "@type": "Person", "name": "Elosai" },
+        "datePublished": "2026-05-16",
+        "dateModified": "2026-05-16",
+        "url": "https://elosaiit.github.io/elosai/spid-2026/",
+        
+        "publisher": { "@type": "Organization", "name": "SPID 2026", "url": "https://elosaiit.github.io/elosai/spid-2026" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://elosaiit.github.io/elosai/spid-2026/" },
+          { "@type": "ListItem", "position": 2, "name": "Come attivare SPID nel 2026: guida completa agli identity provider", "item": "https://elosaiit.github.io/elosai/spid-2026/" }
+        ]
+      }
+    ]
+    </script>
+
+    <script>
+        /* Applica il tema salvato prima del render per evitare il flash */
+        (function() {
+            var saved = localStorage.getItem('theme');
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+        })();
+    </script>
+    <style>
+        /* Zenith Minimalist — design system inline, zero dipendenze esterne */
+        :root {
+            --bg:              #ffffff;
+            --surface:         #f1edec;
+            --on-surface:      #1c1b1b;
+            --on-surface-muted:#444748;
+            --primary:         #000000;
+            --border:          #e7e7e7;
+            --gap:             16px;
+            --section-sm:      64px;
+            --section-lg:      128px;
+            --pad-mobile:      24px;
+        }
+
+        [data-theme="dark"] {
+            --bg:              #1c1b1b;
+            --surface:         #313030;
+            --on-surface:      #f4f0ef;
+            --on-surface-muted:#c4c7c7;
+            --primary:         #f4f0ef;
+            --border:          #2e2e2e;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--bg);
+            color: var(--on-surface);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--pad-mobile);
+        }
+
+        /* Larghezza unica per tutto il contenuto — header, corpo, footer */
+        .content {
+            max-width: 42rem;
+            margin: 0 auto;
+        }
+
+        /* ── Header ── */
+        .site-header { padding-top: var(--gap); }
+        .site-header .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 8px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* ── Toggle tema ── */
+        .theme-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--on-surface-muted);
+            line-height: 0;
+            padding: 0;
+            transition: opacity 0.2s;
+        }
+        .theme-btn:hover { opacity: 0.6; }
+
+        /* Mostra/nasconde l'icona corretta in base al tema */
+        .icon-moon { display: block; }
+        .icon-sun  { display: none;  }
+        [data-theme="dark"] .icon-moon { display: none;  }
+        [data-theme="dark"] .icon-sun  { display: block; }
+
+        /* ── Main ── */
+        main {
+            padding-top: var(--section-sm);
+            padding-bottom: var(--section-lg);
+        }
+
+        /* ── Article header ── */
+        .article-header {
+            padding-top: 32px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: var(--primary);
+            margin-bottom: var(--gap);
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding-top: var(--gap);
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--on-surface-muted);
+        }
+
+        /* ── Body ── */
+        .article-body p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--on-surface);
+            margin-bottom: var(--gap);
+        }
+        .article-body h2 {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+            color: var(--primary);
+            margin-top: var(--section-sm);
+            margin-bottom: var(--gap);
+        }
+        .article-body h3 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+            color: var(--primary);
+            margin-top: calc(var(--gap) * 2);
+            margin-bottom: var(--gap);
+        }
+        .article-body ul,
+        .article-body ol {
+            font-size: 18px;
+            line-height: 1.6;
+            padding-left: 1.4rem;
+            margin-bottom: var(--gap);
+        }
+        .article-body li { margin-bottom: 8px; }
+
+        .article-body hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: var(--section-sm) 0;
+        }
+        .article-body a { color: var(--primary); }
+
+        .article-body table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+            margin-bottom: var(--gap);
+        }
+        .article-body th {
+            text-align: left;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 8px 12px;
+            border-bottom: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        .article-body td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+            line-height: 1.5;
+        }
+        .article-body tr:last-child td { border-bottom: none; }
+
+        .article-body code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 14px;
+            background: var(--surface);
+            padding: 2px 5px;
+        }
+        .article-body pre {
+            background: var(--surface);
+            padding: var(--gap);
+            overflow-x: auto;
+            margin-bottom: var(--gap);
+        }
+        .article-body pre code { background: none; padding: 0; }
+
+        blockquote {
+            font-size: 24px;
+            font-weight: 600;
+            font-style: italic;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+            color: var(--primary);
+            border-left: 2px solid var(--primary);
+            padding: 8px 0 8px var(--gap);
+            margin: var(--section-sm) 0;
+        }
+        blockquote p { font-size: inherit; margin: 0; }
+
+        /* ── Footer ── */
+        footer { margin-top: var(--section-lg); }
+        .footer-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--gap);
+            padding: var(--section-sm) 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+        .footer-logo {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--primary);
+        }
+        .footer-links { display: flex; gap: var(--gap); }
+        .footer-links a {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--on-surface-muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover { color: var(--primary); }
+        .copyright { font-size: 16px; color: var(--on-surface-muted); }
+        .disclaimer { font-size: 13px; line-height: 1.5; color: var(--on-surface-muted); max-width: 36rem; }
+
+        /* ── Desktop ── */
+        @media (min-width: 768px) {
+            main { padding-top: var(--section-lg); }
+            h1   { font-size: 50px; letter-spacing: -0.03em; line-height: 1.1; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="wrap">
+        <div class="content">
+            <a class="logo" href="https://elosaiit.github.io/elosai/">ELOSAI</a>
+            <button class="theme-btn" onclick="toggleTheme()" aria-label="Cambia tema">
+                <!-- Luna: visibile in modalità light -->
+                <svg class="icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
+                </svg>
+                <!-- Sole: visibile in modalità dark -->
+                <svg class="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="wrap">
+    <div class="content">
+        <header class="article-header">
+            <h1>Come attivare SPID nel 2026: guida completa agli identity provider</h1>
+            <div class="article-meta">
+                <span>Elosai</span>
+                <time datetime="2026-05-16">16/05/2026</time>
+            </div>
+        </header>
+
+        <article class="article-body">
+            <p>Lo SPID (Sistema Pubblico di Identità Digitale) è la chiave di accesso ai servizi online della Pubblica Amministrazione italiana. Nel 2026 conta oltre 40 milioni di identità attivate ed è indispensabile per interagire con INPS, Agenzia delle Entrate, SUAP e decine di altri portali pubblici. Questa guida spiega come ottenerlo, quali documenti servono e cosa fare se perdi le credenziali.</p>
+<h2>I 9 identity provider ufficiali</h2>
+<p>Gli identity provider (IdP) sono le aziende accreditate da AgID che rilasciano l'identità digitale. Ognuno ha procedure, tempi e costi leggermente diversi.</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Attivazione gratuita</th>
+<th>Metodo di riconoscimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Poste Italiane (PosteID)</td>
+<td>Sì</td>
+<td>Ufficio postale, webcam, app IO, CIE/CNS</td>
+</tr>
+<tr>
+<td>Aruba</td>
+<td>No (da ~3,90€/anno)</td>
+<td>Webcam, firma digitale, di persona</td>
+</tr>
+<tr>
+<td>Namirial</td>
+<td>No (da ~2,90€/anno)</td>
+<td>Webcam, de visu, domicilio</td>
+</tr>
+<tr>
+<td>InfoCert (INWIT)</td>
+<td>No (da ~29,90€)</td>
+<td>Webcam, tessera CNS</td>
+</tr>
+<tr>
+<td>Register.it</td>
+<td>No</td>
+<td>Webcam</td>
+</tr>
+<tr>
+<td>Sielte</td>
+<td>No</td>
+<td>Webcam, di persona</td>
+</tr>
+<tr>
+<td>TI Trust Technologies</td>
+<td>No</td>
+<td>Webcam, firma digitale</td>
+</tr>
+<tr>
+<td>Intesa (Intesa Sanpaolo Group)</td>
+<td>No</td>
+<td>App, webcam</td>
+</tr>
+<tr>
+<td>Lepida</td>
+<td>Gratuito (solo Emilia-Romagna)</td>
+<td>Sportello fisico</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Consiglio pratico:</strong> se vuoi l'attivazione completamente gratuita e valida su tutto il territorio nazionale, scegli <strong>Poste Italiane</strong>. Il riconoscimento può avvenire allo sportello postale, tramite app, o con la CIE.</p>
+<h2>I tre livelli SPID</h2>
+<ul>
+<li><strong>Livello 1 (SPID L1):</strong> accesso con solo username e password. Usato per servizi a basso rischio.</li>
+<li><strong>Livello 2 (SPID L2):</strong> username, password + OTP (codice temporaneo via app o SMS). Il livello richiesto dalla quasi totalità dei servizi PA (INPS, Agenzia Entrate, ecc.).</li>
+<li><strong>Livello 3 (SPID L3):</strong> prevede un dispositivo fisico aggiuntivo (smart card, chiave hardware). Usato raramente, per operazioni ad altissima sicurezza.</li>
+</ul>
+<p>Nella pratica quotidiana utilizzerai quasi sempre il livello 2.</p>
+<h2>Documenti necessari per l'attivazione</h2>
+<p>Per richiedere SPID a qualsiasi provider servono sempre:</p>
+<ol>
+<li><strong>Carta d'identità</strong> (in corso di validità) <strong>oppure passaporto</strong></li>
+<li><strong>Tessera sanitaria</strong> (con codice fiscale)</li>
+<li><strong>Indirizzo email</strong> personale e funzionante</li>
+<li><strong>Numero di cellulare</strong> italiano (su cui ricevere gli OTP)</li>
+</ol>
+<p>Alcuni provider accettano anche la patente di guida come documento d'identità. Verifica sul sito del provider scelto.</p>
+<h2>Dove si usa SPID nel 2026</h2>
+<p>SPID è accettato su tutte le principali piattaforme pubbliche:</p>
+<ul>
+<li><strong>INPS</strong>: pensioni, NASpI, Assegno Unico, cedolini</li>
+<li><strong>Agenzia delle Entrate / Fisconline</strong>: dichiarazione dei redditi, F24, visure</li>
+<li><strong>SUAP</strong>: sportello unico attività produttive del tuo Comune</li>
+<li><strong>Fascicolo Sanitario Elettronico</strong>: referti, prescrizioni</li>
+<li><strong>ANPR</strong>: certificati anagrafici online</li>
+<li><strong>Portale del Cittadino</strong> e app <strong>IO</strong></li>
+</ul>
+<p>Dal 2023 molti Comuni hanno dismesso i PIN locali: SPID o CIE sono diventati l'unico modo per accedere.</p>
+<h2>SPID vs CIE: qual è la differenza?</h2>
+<table>
+<thead>
+<tr>
+<th>Caratteristica</th>
+<th>SPID</th>
+<th>CIE (Carta d'Identità Elettronica)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Natura</td>
+<td>Credenziale digitale (software)</td>
+<td>Documento fisico con chip NFC</td>
+</tr>
+<tr>
+<td>Costo rilascio</td>
+<td>Gratuito (con Poste)</td>
+<td>22,20€ (rilasciata dal Comune)</td>
+</tr>
+<tr>
+<td>Uso offline</td>
+<td>No</td>
+<td>Sì (come documento fisico)</td>
+</tr>
+<tr>
+<td>Accesso servizi PA</td>
+<td>Sì (tutti i livelli)</td>
+<td>Sì (tramite app CieID)</td>
+</tr>
+<tr>
+<td>Necessario smartphone</td>
+<td>Sì (per L2)</td>
+<td>Sì (per NFC)</td>
+</tr>
+</tbody>
+</table>
+<p>In sintesi: la <strong>CIE</strong> è il documento fisico che usi anche nel mondo reale; lo <strong>SPID</strong> è una credenziale digitale più flessibile, legata a un provider privato. Molti cittadini li usano entrambi in base alla comodità del momento.</p>
+<h2>Cosa fare se perdi le credenziali SPID</h2>
+<ul>
+<li><strong>Password dimenticata:</strong> clicca su &quot;Password dimenticata&quot; sul sito del tuo provider. Riceverai un link di reset via email.</li>
+<li><strong>Numero di cellulare perso o cambiato:</strong> contatta il servizio clienti del provider con un documento di identità.</li>
+<li><strong>Account bloccato:</strong> accedi all'area riservata del provider o chiama il supporto. Dopo alcuni tentativi falliti l'account si blocca per sicurezza.</li>
+<li><strong>Vuoi cambiare provider:</strong> puoi attivare SPID con un secondo provider senza dover revocare il primo. L'identità digitale rimane la stessa.</li>
+</ul>
+<h2>Domande frequenti</h2>
+<p><strong>Lo SPID ha una scadenza?</strong>
+L'identità SPID non scade, ma le credenziali (password, app) possono avere regole di rinnovo fissate dal provider. Controlla periodicamente le comunicazioni del tuo IdP.</p>
+<p><strong>Posso avere SPID senza smartphone?</strong>
+Sì, al livello 1 basta username e password. Per il livello 2 (quasi sempre richiesto) puoi usare l'OTP via SMS invece dell'app, quindi anche un telefono base è sufficiente.</p>
+<p><strong>Gli stranieri con permesso di soggiorno possono fare SPID?</strong>
+Sì, i cittadini extra-UE con permesso di soggiorno valido e codice fiscale italiano possono richiedere SPID. La procedura varia per provider: alcuni richiedono il riconoscimento fisico.</p>
+<p><strong>SPID è sicuro?</strong>
+Sì. Il protocollo SAML 2.0 e l'autenticazione a due fattori (livello 2) rendono SPID più sicuro di molti sistemi di login tradizionali. Non condividere mai le tue credenziali.</p>
+<h2>Fonti</h2>
+<ul>
+<li><a href="https://www.agid.gov.it/it/piattaforme/spid">AgID, SPID, il Sistema Pubblico di Identità Digitale</a></li>
+<li><a href="https://www.gov.it/it/argomento/spid">Governo.it, Come richiedere SPID</a></li>
+<li><a href="https://posteid.poste.it/">Poste Italiane, Attivazione PosteID</a></li>
+<li><a href="https://www.gazzettaufficiale.it/eli/id/2014/12/09/14G00194/sg">DPCM 24 ottobre 2014, Regolamento SPID (GU)</a></li>
+</ul>
+
+        </article>
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        <div class="content footer-inner">
+            <div class="footer-logo">ELOSAI</div>
+            <nav class="footer-links">
+                <a href="https://elosaiit.github.io/elosai/">Archivio</a>
+            </nav>
+            <p class="disclaimer"><strong>Privacy:</strong> Questo sito non utilizza cookie e non raccoglie dati personali. Per contare le visite in modo anonimo utilizziamo <a href="https://www.goatcounter.com" target="_blank" rel="noopener noreferrer">GoatCounter</a>, un servizio open source che registra solo dati aggregati (pagine visitate, paese, browser) senza tracciare individui. Le pagine sono ospitate su <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>, che può registrare log di accesso tecnici secondo la propria <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">informativa sulla privacy</a>.</p>
+            <p class="copyright">© 2026 SPID 2026.</p>
+            <p class="disclaimer">Le informazioni contenute in questo sito hanno scopo esclusivamente divulgativo e sono fornite con il massimo impegno di accuratezza (best-effort). Non sostituiscono il parere di un professionista qualificato. Per qualsiasi decisione importante, rivolgiti sempre a un esperto.</p>
+            <p class="disclaimer">Hai trovato un errore o un'informazione non aggiornata? Segnalacelo a <a href="mailto:elosaiit@proton.me">elosaiit@proton.me</a>.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleTheme() {
+        var html = document.documentElement;
+        var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+    }
+    document.querySelectorAll('.article-body a[href^="http"]').forEach(function(a) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+    });
+</script>
+
+<script data-goatcounter="https://elosai.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Carta d&#39;Identità Elettronica</title>
+    <link>https://elosaiit.github.io/elosai/carta-identita-elettronica</link>
+    <description>Come richiedere la CIE, documenti necessari, costi e tempi. Vale per viaggiare in Europa e attivare lo SPID. Guida completa 2026.</description>
+    <language>it</language>
+    <atom:link href="https://elosaiit.github.io/elosai/carta-identita-elettronica/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    
+    <item>
+      <title>Carta d&#39;Identità Elettronica (CIE): come richiederla nel 2026</title>
+      <link>https://elosaiit.github.io/elosai/carta-identita-elettronica/</link>
+      <guid isPermaLink="true">https://elosaiit.github.io/elosai/carta-identita-elettronica/</guid>
+      <pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate>
+      <description>Guida alla CIE 2026: appuntamento al Comune, costo 22,21€, validità per fascia d&#39;età, chip NFC per autenticazione online e documenti necessari.</description>
+    </item>
+    
+    
+  </channel>
+</rss>
